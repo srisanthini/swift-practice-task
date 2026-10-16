@@ -1,1 +1,11 @@
+var a = [1, 2, 3, 4, 5]
+var result: [Int] = []
 
+for i in stride(from: a.count - 1, through: 0, by: -1) {
+    result.append(a[i])
+}
+print(result)
+
+
+output:
+[5, 4, 3, 2, 1]
