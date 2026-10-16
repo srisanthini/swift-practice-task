@@ -1,1 +1,25 @@
+enum PaymentMethod {
+    case cash
+    case card(number: String)
+    case upi(id: String)
+}
 
+func pay(_ method: PaymentMethod) {
+    switch method {
+    case .cash:
+        print("Cash payment")
+    case .card(let number):
+        print("Card:", number)
+    case .upi(let id):
+        print("UPI:", id)
+    }
+}
+
+pay(.cash)
+pay(.card(number: "1234"))
+pay(.upi(id: "user@upi"))
+
+Output:
+Cash payment
+Card: 1234
+UPI: user@upi
