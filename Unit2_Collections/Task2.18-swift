@@ -1,1 +1,13 @@
+let prices = ["Apple": 20.0, "Milk": 30.0, "Bread": 40.0]
+let cart = ["Apple", "Milk", "Bread", "Apple"]
 
+var total = 0.0
+
+for item in cart {
+    total += prices[item] ?? 0
+}
+
+print("Total Bill:", total)
+
+Output:
+Total Bill: 110.0
