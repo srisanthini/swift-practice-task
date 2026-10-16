@@ -1,1 +1,11 @@
+let numbers = [10, 20, 30, 40, 50]
+print(numbers)
+print(numbers.count)
+print(numbers[0])
+print(numbers[4])
 
+Output:
+[10, 20, 30, 40, 50]
+5
+10
+50
