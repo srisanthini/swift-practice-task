@@ -1,1 +1,15 @@
+enum Direction {
+    case north, south, east, west
+}
 
+let d = Direction.north
+
+switch d {
+case .north: print("North")
+case .south: print("South")
+case .east: print("East")
+case .west: print("West")
+}
+
+Output:
+North
