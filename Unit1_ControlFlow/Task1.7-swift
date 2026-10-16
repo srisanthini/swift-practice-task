@@ -1,1 +1,9 @@
+let a = 10
+let b = 20
 
+let larger = a > b ? a : b
+
+print(larger)
+
+Output:
+20
