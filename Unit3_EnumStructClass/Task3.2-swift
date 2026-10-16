@@ -1,1 +1,10 @@
+enum Weekday: Int {
+    case monday = 1, tuesday, wednesday, thursday, friday, saturday, sunday
+}
 
+print(Weekday.monday.rawValue)
+print(Weekday(rawValue: 3)!)
+
+Output:
+1
+wednesday
