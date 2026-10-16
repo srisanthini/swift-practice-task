@@ -1,1 +1,20 @@
+struct Student {
+    var marks: Int
 
+    init?(marks: Int) {
+        if marks < 0 || marks > 100 {
+            return nil
+        }
+        self.marks = marks
+    }
+}
+
+let s = Student(marks: 85)
+print(s?.marks as Any)
+
+let s2 = Student(marks: 120)
+print(s2 as Any)
+
+Output:
+Optional(85)
+nil
