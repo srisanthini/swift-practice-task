@@ -1,1 +1,14 @@
+struct Rectangle {
+    var width: Double
+    var height: Double
 
+    var area: Double {
+        width * height
+    }
+}
+
+let r = Rectangle(width: 5, height: 4)
+print(r.area)
+
+Output:
+20.0
