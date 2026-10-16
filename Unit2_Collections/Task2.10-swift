@@ -1,1 +1,12 @@
+let a = [1, 2, 2, 3, 1, 4, 3]
+var result: [Int] = []
 
+for n in a {
+    if !result.contains(n) {
+        result.append(n)
+    }
+}
+print(result)
+
+Output:
+[1, 2, 3, 4]
