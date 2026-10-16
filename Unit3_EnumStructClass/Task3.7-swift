@@ -1,1 +1,22 @@
+class Car {
+    var brand = "BMW"
+    var speed = 0
 
+    func accelerate() {
+        speed += 20
+    }
+
+    func brake() {
+        speed -= 10
+    }
+}
+
+let c = Car()
+c.accelerate()
+print(c.speed)
+c.brake()
+print(c.speed)
+
+Output:
+20
+10
