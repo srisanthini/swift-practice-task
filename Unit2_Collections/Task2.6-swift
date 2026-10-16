@@ -1,1 +1,18 @@
+let students = [
+    "Arun": 85,
+    "Priya": 90,
+    "Kavin": 75,
+    "Divya": 88,
+    "Ravi": 95
+]
 
+for (name, mark) in students {
+    print(name, mark)
+}
+
+Output:
+Divya 88
+Ravi 95
+Kavin 75
+Arun 85
+Priya 90
