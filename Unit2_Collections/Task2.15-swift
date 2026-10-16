@@ -1,1 +1,7 @@
+let a = [10, 25, 5, 40, 30]
+let sorted = a.sorted(by: >)
 
+print(sorted[1])
+
+Output:
+30
