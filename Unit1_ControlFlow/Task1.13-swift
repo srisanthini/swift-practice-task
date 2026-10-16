@@ -1,1 +1,48 @@
+let number = 7
+var prime = true
 
+if number < 2 {
+    prime = false
+}
+
+if number >= 2 {
+    for i in 2..<number {
+        if number % i == 0 {
+            prime = false
+        }
+    }
+}
+
+print(prime ? "Prime" : "Not Prime")
+
+for n in 2...50 {
+    var isPrime = true
+
+    for i in 2..<n {
+        if n % i == 0 {
+            isPrime = false
+        }
+    }
+
+    if isPrime {
+        print(n)
+    }
+}
+
+Output:
+Prime
+2
+3
+5
+7
+11
+13
+17
+19
+23
+29
+31
+37
+41
+43
+47
