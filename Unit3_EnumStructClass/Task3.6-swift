@@ -1,1 +1,19 @@
+class Person {
+    var name: String
+    var age: Int
 
+    init(name: String, age: Int) {
+        self.name = name
+        self.age = age
+    }
+
+    func introduce() {
+        print("I am \(name), age \(age)")
+    }
+}
+
+let p = Person(name: "Arun", age: 20)
+p.introduce()
+
+Output:
+I am Arun, age 20
