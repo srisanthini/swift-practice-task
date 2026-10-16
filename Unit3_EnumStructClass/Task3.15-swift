@@ -1,1 +1,40 @@
+class Book {
+    var title: String
 
+    init(title: String) {
+        self.title = title
+    }
+}
+
+class Library {
+    var books: [Book] = []
+
+    func add(_ book: Book) {
+        books.append(book)
+    }
+
+    func remove(_ title: String) {
+        books.removeAll { $0.title == title }
+    }
+
+    func search(_ title: String) {
+        print(books.contains { $0.title == title })
+    }
+
+    func list() {
+        for book in books {
+            print(book.title)
+        }
+    }
+}
+
+let library = Library()
+library.add(Book(title: "Swift Basics"))
+library.add(Book(title: "Java Basics"))
+library.search("Swift Basics")
+library.remove("Java Basics")
+library.list()
+
+Output:
+true
+Swift Basics
