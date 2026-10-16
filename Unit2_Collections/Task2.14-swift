@@ -1,1 +1,12 @@
+let students = ["Arun": 85, "Priya": 95, "Kavin": 75, "Divya": 90]
 
+let sorted = students.sorted { $0.value > $1.value }
+
+for student in sorted.prefix(3) {
+    print(student.key, student.value)
+}
+
+Output:
+Priya 95
+Divya 90
+Arun 85
