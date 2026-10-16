@@ -1,1 +1,28 @@
+struct Student {
+    var marks = 50
+}
 
+class Person {
+    var age = 20
+}
+
+var s1 = Student()
+var s2 = s1
+s2.marks = 90
+
+print(s1.marks)
+print(s2.marks)
+
+let p1 = Person()
+let p2 = p1
+p2.age = 25
+
+print(p1.age)
+print(p2.age)
+
+
+Output:
+50
+90
+25
+25
