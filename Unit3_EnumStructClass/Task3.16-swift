@@ -1,1 +1,23 @@
+struct MathHelper {
+    static func square(_ n: Int) -> Int {
+        n * n
+    }
+}
 
+class Counter {
+    static var count = 0
+
+    init() {
+        Counter.count += 1
+    }
+}
+
+print(MathHelper.square(5))
+
+let c1 = Counter()
+let c2 = Counter()
+print(Counter.count)
+
+Output:
+25
+2
