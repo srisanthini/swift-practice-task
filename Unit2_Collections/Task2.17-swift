@@ -1,1 +1,11 @@
+let names = ["Arun", "Anu", "Bala", "Banu", "Charan"]
+var groups: [Character: [String]] = [:]
 
+for name in names {
+    let first = name.first!
+    groups[first, default: []].append(name)
+}
+print(groups)
+
+Output (dictionary order may vary):
+["A": ["Arun", "Anu"], "B": ["Bala", "Banu"], "C": ["Charan"]]
