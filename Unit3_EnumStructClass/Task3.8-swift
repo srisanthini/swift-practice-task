@@ -1,1 +1,21 @@
+enum Planet: CaseIterable {
+    case mercury, venus, earth, mars, jupiter, saturn, uranus, neptune
 
+    var order: Int {
+        Planet.allCases.firstIndex(of: self)! + 1
+    }
+}
+
+for p in Planet.allCases {
+    print(p, p.order)
+}
+
+Output:
+mercury 1
+venus 2
+earth 3
+mars 4
+jupiter 5
+saturn 6
+uranus 7
+neptune 8
